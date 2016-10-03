@@ -1,0 +1,1323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Gestion" targetNamespace="http://tempuri.org/Gestion.xsd" xmlns:mstns="http://tempuri.org/Gestion.xsd" xmlns="http://tempuri.org/Gestion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="GestionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GestionConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CargadorStepService.My.MySettings.GlobalReference.Default.GestionConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MaestroProducto_cargadorTableAdapter" GeneratorDataComponentClassName="MaestroProducto_cargadorTableAdapter" Name="MaestroProducto_cargador" UserDataComponentName="MaestroProducto_cargadorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.MaestroProducto_cargador" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="GetData">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [MaestroProducto_cargador] ([login], [fila], [SKU], [descripcionInterna], [descripcionVenta], [tipoProducto], [estado], [codFamilia], [codCategoria], [codSubCategoria], [codRelacionado], [unidad], [unidadMedida], [unidadMedidaConv], [unidadCompra], [unidadCompraConv], [unidadLogistica], [unidadLogisticaConv], [unidadEstadistica], [unidadEstadisticaConv], [codigoBarra], [codigoCompra], [codigoFabricante], [codigoAutoplanet], [descIngles], [tipoMaterial], [subagrupacion], [paisOrigen], [tipoCodigo], [listaPrecioNormal], [listaPrecioPersonal], [listaPrecio06], [precioMerma], [precioDevolucion], [IVA], [stockSeguridad], [estacionalidad], [sobreStock], [minPlanograma], [MaxPlanograma], [tamanoEstuche], [tamanoPack], [impRetail], [cantPorAuto], [origReabas], [peso], [fabricante], [responsable], [extension], [rutPorDefecto], [rut1], [costo1], [CodCompra1], [MOQ1], [rut2], [costo2], [codCompra2], [MOQ2], [rut3], [costo3], [codCompra3], [MOQ3], [rut4], [Costo4], [codCompra4], [MOQ4], [rut5], [costo5], [codCompra5], [MOQ5], [alarmado], [etiquetado], [traduccion], [embolsado], [enzunchado], [largo], [ancho], [alto], [codigoBarraAlt1], [codigoBarraAlt2], [codigoBarraAlt3], [codigoBarraAlt4], [codigoBarraAlt5], [codigoBarraAlt6], [stockMin1], [stockMax1], [stockMin2], [stockMax2], [stockMin3], [stockMax3], [stockMin4], [stockMax4], [stockMin5], [stockMax5], [stockMin6], [stockMax6], [stockMin7], [stockMax7], [stockMin8], [stockMax8], [stockMin9], [stockMax9], [stockMin10], [stockMax10], [stockMin11], [stockMax11], [stockMin12], [StockMax12]) VALUES (@login, @fila, @SKU, @descripcionInterna, @descripcionVenta, @tipoProducto, @estado, @codFamilia, @codCategoria, @codSubCategoria, @codRelacionado, @unidad, @unidadMedida, @unidadMedidaConv, @unidadCompra, @unidadCompraConv, @unidadLogistica, @unidadLogisticaConv, @unidadEstadistica, @unidadEstadisticaConv, @codigoBarra, @codigoCompra, @codigoFabricante, @codigoAutoplanet, @descIngles, @tipoMaterial, @subagrupacion, @paisOrigen, @tipoCodigo, @listaPrecioNormal, @listaPrecioPersonal, @listaPrecio06, @precioMerma, @precioDevolucion, @IVA, @stockSeguridad, @estacionalidad, @sobreStock, @minPlanograma, @MaxPlanograma, @tamanoEstuche, @tamanoPack, @impRetail, @cantPorAuto, @origReabas, @peso, @fabricante, @responsable, @extension, @rutPorDefecto, @rut1, @costo1, @CodCompra1, @MOQ1, @rut2, @costo2, @codCompra2, @MOQ2, @rut3, @costo3, @codCompra3, @MOQ3, @rut4, @Costo4, @codCompra4, @MOQ4, @rut5, @costo5, @codCompra5, @MOQ5, @alarmado, @etiquetado, @traduccion, @embolsado, @enzunchado, @largo, @ancho, @alto, @codigoBarraAlt1, @codigoBarraAlt2, @codigoBarraAlt3, @codigoBarraAlt4, @codigoBarraAlt5, @codigoBarraAlt6, @stockMin1, @stockMax1, @stockMin2, @stockMax2, @stockMin3, @stockMax3, @stockMin4, @stockMax4, @stockMin5, @stockMax5, @stockMin6, @stockMax6, @stockMin7, @stockMax7, @stockMin8, @stockMax8, @stockMin9, @stockMax9, @stockMin10, @stockMax10, @stockMin11, @stockMax11, @stockMin12, @StockMax12)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="login" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@fila" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="fila" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SKU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SKU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@descripcionInterna" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="descripcionInterna" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@descripcionVenta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="descripcionVenta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tipoProducto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipoProducto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codFamilia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codFamilia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codCategoria" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codCategoria" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codSubCategoria" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codSubCategoria" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codRelacionado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codRelacionado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadMedida" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadMedida" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadMedidaConv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadMedidaConv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadCompra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadCompra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadCompraConv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadCompraConv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadLogistica" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadLogistica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadLogisticaConv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadLogisticaConv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadEstadistica" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadEstadistica" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@unidadEstadisticaConv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="unidadEstadisticaConv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoCompra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoCompra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoFabricante" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoFabricante" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoAutoplanet" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoAutoplanet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@descIngles" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="descIngles" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tipoMaterial" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipoMaterial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@subagrupacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="subagrupacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@paisOrigen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="paisOrigen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tipoCodigo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tipoCodigo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@listaPrecioNormal" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="listaPrecioNormal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@listaPrecioPersonal" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="listaPrecioPersonal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@listaPrecio06" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="listaPrecio06" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@precioMerma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="precioMerma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@precioDevolucion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="precioDevolucion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@IVA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockSeguridad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockSeguridad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@estacionalidad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estacionalidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@sobreStock" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="sobreStock" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@minPlanograma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="minPlanograma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MaxPlanograma" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MaxPlanograma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tamanoEstuche" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tamanoEstuche" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@tamanoPack" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="tamanoPack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@impRetail" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="impRetail" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@cantPorAuto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="cantPorAuto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@origReabas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="origReabas" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@peso" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="peso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@fabricante" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="fabricante" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@responsable" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="responsable" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@extension" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="extension" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rutPorDefecto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rutPorDefecto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rut1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rut1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@costo1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="costo1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodCompra1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodCompra1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MOQ1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MOQ1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rut2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rut2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@costo2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="costo2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codCompra2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codCompra2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MOQ2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MOQ2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rut3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rut3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@costo3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="costo3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codCompra3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codCompra3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MOQ3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MOQ3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rut4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rut4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Costo4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Costo4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codCompra4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codCompra4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MOQ4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MOQ4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@rut5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="rut5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@costo5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="costo5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codCompra5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codCompra5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MOQ5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MOQ5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@alarmado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="alarmado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@etiquetado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="etiquetado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@traduccion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="traduccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@embolsado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="embolsado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@enzunchado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="enzunchado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@largo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="largo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ancho" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ancho" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@alto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="alto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@codigoBarraAlt6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="codigoBarraAlt6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMax11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMax11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@stockMin12" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="stockMin12" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StockMax12" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StockMax12" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select * from MaestroProducto_cargador</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="login" DataSetColumn="login" />
+              <Mapping SourceColumn="fila" DataSetColumn="fila" />
+              <Mapping SourceColumn="SKU" DataSetColumn="SKU" />
+              <Mapping SourceColumn="descripcionInterna" DataSetColumn="descripcionInterna" />
+              <Mapping SourceColumn="descripcionVenta" DataSetColumn="descripcionVenta" />
+              <Mapping SourceColumn="tipoProducto" DataSetColumn="tipoProducto" />
+              <Mapping SourceColumn="estado" DataSetColumn="estado" />
+              <Mapping SourceColumn="codFamilia" DataSetColumn="codFamilia" />
+              <Mapping SourceColumn="codCategoria" DataSetColumn="codCategoria" />
+              <Mapping SourceColumn="codSubCategoria" DataSetColumn="codSubCategoria" />
+              <Mapping SourceColumn="codRelacionado" DataSetColumn="codRelacionado" />
+              <Mapping SourceColumn="unidad" DataSetColumn="unidad" />
+              <Mapping SourceColumn="unidadMedida" DataSetColumn="unidadMedida" />
+              <Mapping SourceColumn="unidadMedidaConv" DataSetColumn="unidadMedidaConv" />
+              <Mapping SourceColumn="unidadCompra" DataSetColumn="unidadCompra" />
+              <Mapping SourceColumn="unidadCompraConv" DataSetColumn="unidadCompraConv" />
+              <Mapping SourceColumn="unidadLogistica" DataSetColumn="unidadLogistica" />
+              <Mapping SourceColumn="unidadLogisticaConv" DataSetColumn="unidadLogisticaConv" />
+              <Mapping SourceColumn="unidadEstadistica" DataSetColumn="unidadEstadistica" />
+              <Mapping SourceColumn="unidadEstadisticaConv" DataSetColumn="unidadEstadisticaConv" />
+              <Mapping SourceColumn="codigoBarra" DataSetColumn="codigoBarra" />
+              <Mapping SourceColumn="codigoCompra" DataSetColumn="codigoCompra" />
+              <Mapping SourceColumn="codigoFabricante" DataSetColumn="codigoFabricante" />
+              <Mapping SourceColumn="codigoAutoplanet" DataSetColumn="codigoAutoplanet" />
+              <Mapping SourceColumn="descIngles" DataSetColumn="descIngles" />
+              <Mapping SourceColumn="tipoMaterial" DataSetColumn="tipoMaterial" />
+              <Mapping SourceColumn="subagrupacion" DataSetColumn="subagrupacion" />
+              <Mapping SourceColumn="paisOrigen" DataSetColumn="paisOrigen" />
+              <Mapping SourceColumn="tipoCodigo" DataSetColumn="tipoCodigo" />
+              <Mapping SourceColumn="listaPrecioNormal" DataSetColumn="listaPrecioNormal" />
+              <Mapping SourceColumn="listaPrecioPersonal" DataSetColumn="listaPrecioPersonal" />
+              <Mapping SourceColumn="listaPrecio06" DataSetColumn="listaPrecio06" />
+              <Mapping SourceColumn="precioMerma" DataSetColumn="precioMerma" />
+              <Mapping SourceColumn="precioDevolucion" DataSetColumn="precioDevolucion" />
+              <Mapping SourceColumn="IVA" DataSetColumn="IVA" />
+              <Mapping SourceColumn="stockSeguridad" DataSetColumn="stockSeguridad" />
+              <Mapping SourceColumn="estacionalidad" DataSetColumn="estacionalidad" />
+              <Mapping SourceColumn="sobreStock" DataSetColumn="sobreStock" />
+              <Mapping SourceColumn="minPlanograma" DataSetColumn="minPlanograma" />
+              <Mapping SourceColumn="MaxPlanograma" DataSetColumn="MaxPlanograma" />
+              <Mapping SourceColumn="tamanoEstuche" DataSetColumn="tamanoEstuche" />
+              <Mapping SourceColumn="tamanoPack" DataSetColumn="tamanoPack" />
+              <Mapping SourceColumn="impRetail" DataSetColumn="impRetail" />
+              <Mapping SourceColumn="cantPorAuto" DataSetColumn="cantPorAuto" />
+              <Mapping SourceColumn="origReabas" DataSetColumn="origReabas" />
+              <Mapping SourceColumn="peso" DataSetColumn="peso" />
+              <Mapping SourceColumn="fabricante" DataSetColumn="fabricante" />
+              <Mapping SourceColumn="responsable" DataSetColumn="responsable" />
+              <Mapping SourceColumn="extension" DataSetColumn="extension" />
+              <Mapping SourceColumn="rutPorDefecto" DataSetColumn="rutPorDefecto" />
+              <Mapping SourceColumn="rut1" DataSetColumn="rut1" />
+              <Mapping SourceColumn="costo1" DataSetColumn="costo1" />
+              <Mapping SourceColumn="CodCompra1" DataSetColumn="CodCompra1" />
+              <Mapping SourceColumn="MOQ1" DataSetColumn="MOQ1" />
+              <Mapping SourceColumn="rut2" DataSetColumn="rut2" />
+              <Mapping SourceColumn="costo2" DataSetColumn="costo2" />
+              <Mapping SourceColumn="codCompra2" DataSetColumn="codCompra2" />
+              <Mapping SourceColumn="MOQ2" DataSetColumn="MOQ2" />
+              <Mapping SourceColumn="rut3" DataSetColumn="rut3" />
+              <Mapping SourceColumn="costo3" DataSetColumn="costo3" />
+              <Mapping SourceColumn="codCompra3" DataSetColumn="codCompra3" />
+              <Mapping SourceColumn="MOQ3" DataSetColumn="MOQ3" />
+              <Mapping SourceColumn="rut4" DataSetColumn="rut4" />
+              <Mapping SourceColumn="Costo4" DataSetColumn="Costo4" />
+              <Mapping SourceColumn="codCompra4" DataSetColumn="codCompra4" />
+              <Mapping SourceColumn="MOQ4" DataSetColumn="MOQ4" />
+              <Mapping SourceColumn="rut5" DataSetColumn="rut5" />
+              <Mapping SourceColumn="costo5" DataSetColumn="costo5" />
+              <Mapping SourceColumn="codCompra5" DataSetColumn="codCompra5" />
+              <Mapping SourceColumn="MOQ5" DataSetColumn="MOQ5" />
+              <Mapping SourceColumn="alarmado" DataSetColumn="alarmado" />
+              <Mapping SourceColumn="etiquetado" DataSetColumn="etiquetado" />
+              <Mapping SourceColumn="traduccion" DataSetColumn="traduccion" />
+              <Mapping SourceColumn="embolsado" DataSetColumn="embolsado" />
+              <Mapping SourceColumn="enzunchado" DataSetColumn="enzunchado" />
+              <Mapping SourceColumn="largo" DataSetColumn="largo" />
+              <Mapping SourceColumn="ancho" DataSetColumn="ancho" />
+              <Mapping SourceColumn="alto" DataSetColumn="alto" />
+              <Mapping SourceColumn="codigoBarraAlt1" DataSetColumn="codigoBarraAlt1" />
+              <Mapping SourceColumn="codigoBarraAlt2" DataSetColumn="codigoBarraAlt2" />
+              <Mapping SourceColumn="codigoBarraAlt3" DataSetColumn="codigoBarraAlt3" />
+              <Mapping SourceColumn="codigoBarraAlt4" DataSetColumn="codigoBarraAlt4" />
+              <Mapping SourceColumn="codigoBarraAlt5" DataSetColumn="codigoBarraAlt5" />
+              <Mapping SourceColumn="codigoBarraAlt6" DataSetColumn="codigoBarraAlt6" />
+              <Mapping SourceColumn="stockMin1" DataSetColumn="stockMin1" />
+              <Mapping SourceColumn="stockMax1" DataSetColumn="stockMax1" />
+              <Mapping SourceColumn="stockMin2" DataSetColumn="stockMin2" />
+              <Mapping SourceColumn="stockMax2" DataSetColumn="stockMax2" />
+              <Mapping SourceColumn="stockMin3" DataSetColumn="stockMin3" />
+              <Mapping SourceColumn="stockMax3" DataSetColumn="stockMax3" />
+              <Mapping SourceColumn="stockMin4" DataSetColumn="stockMin4" />
+              <Mapping SourceColumn="stockMax4" DataSetColumn="stockMax4" />
+              <Mapping SourceColumn="stockMin5" DataSetColumn="stockMin5" />
+              <Mapping SourceColumn="stockMax5" DataSetColumn="stockMax5" />
+              <Mapping SourceColumn="stockMin6" DataSetColumn="stockMin6" />
+              <Mapping SourceColumn="stockMax6" DataSetColumn="stockMax6" />
+              <Mapping SourceColumn="stockMin7" DataSetColumn="stockMin7" />
+              <Mapping SourceColumn="stockMax7" DataSetColumn="stockMax7" />
+              <Mapping SourceColumn="stockMin8" DataSetColumn="stockMin8" />
+              <Mapping SourceColumn="stockMax8" DataSetColumn="stockMax8" />
+              <Mapping SourceColumn="stockMin9" DataSetColumn="stockMin9" />
+              <Mapping SourceColumn="stockMax9" DataSetColumn="stockMax9" />
+              <Mapping SourceColumn="stockMin10" DataSetColumn="stockMin10" />
+              <Mapping SourceColumn="stockMax10" DataSetColumn="stockMax10" />
+              <Mapping SourceColumn="stockMin11" DataSetColumn="stockMin11" />
+              <Mapping SourceColumn="stockMax11" DataSetColumn="stockMax11" />
+              <Mapping SourceColumn="stockMin12" DataSetColumn="stockMin12" />
+              <Mapping SourceColumn="StockMax12" DataSetColumn="StockMax12" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EliminaPorLogin" Modifier="Public" Name="EliminaPorLogin" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="EliminaPorLogin">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM MaestroProducto_cargador WHERE login=@login</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="login" ColumnName="login" DataSourceName="" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="login" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_InsertaMP_cargadorDinamicoTableAdapter" GeneratorDataComponentClassName="sp_InsertaMP_cargadorDinamicoTableAdapter" Name="sp_InsertaMP_cargadorDinamico" UserDataComponentName="sp_InsertaMP_cargadorDinamicoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.sp_InsertaMP_cargadorDinamico" DbObjectType="StoredProcedure" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="sp_InsertaMP_cargadorDinamico" GetMethodModifier="Public" GetMethodName="sp_InsertaMP_cargadorDinamico" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="sp_InsertaMP_cargadorDinamico" UserSourceName="sp_InsertaMP_cargadorDinamico">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_InsertaMP_cargadorDinamico</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@SQL" Precision="0" ProviderType="NVarChar" Scale="0" Size="4000" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_actualiza_MaestroProducto_STEPTableAdapter" GeneratorDataComponentClassName="sp_actualiza_MaestroProducto_STEPTableAdapter" Name="sp_actualiza_MaestroProducto_STEP" UserDataComponentName="sp_actualiza_MaestroProducto_STEPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.sp_actualiza_MaestroProducto_STEP" DbObjectType="StoredProcedure" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="__GetData" GetMethodModifier="Public" GetMethodName="__GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="__GetData" UserSourceName="__GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_actualiza_MaestroProducto_STEP</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fila" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.sp_actualiza_MaestroProducto_STEP" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_actualiza_MaestroProducto_STEP" Modifier="Public" Name="sp_actualiza_MaestroProducto_STEP" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="sp_actualiza_MaestroProducto_STEP">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_actualiza_MaestroProducto_STEP</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fila" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_carga_MaestroProducto_STEPTableAdapter" GeneratorDataComponentClassName="sp_carga_MaestroProducto_STEPTableAdapter" Name="sp_carga_MaestroProducto_STEP" UserDataComponentName="sp_carga_MaestroProducto_STEPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.sp_carga_MaestroProducto_STEP" DbObjectType="StoredProcedure" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="__GetData" GetMethodModifier="Public" GetMethodName="__GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="__GetData" UserSourceName="__GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_carga_MaestroProducto_STEP</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.sp_carga_MaestroProducto_STEP" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="sp_carga_MaestroProducto_STEP" Modifier="Public" Name="sp_carga_MaestroProducto_STEP" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="sp_carga_MaestroProducto_STEP">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.sp_carga_MaestroProducto_STEP</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@login" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@fila" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_pos_producto_agrupacionTableAdapter" GeneratorDataComponentClassName="vw_pos_producto_agrupacionTableAdapter" Name="vw_pos_producto_agrupacion" UserDataComponentName="vw_pos_producto_agrupacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.vw_pos_producto_agrupacion" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select * from vw_pos_producto_agrupacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TIPAGR" DataSetColumn="TIPAGR" />
+              <Mapping SourceColumn="CODAGR" DataSetColumn="CODAGR" />
+              <Mapping SourceColumn="DESAGR" DataSetColumn="DESAGR" />
+              <Mapping SourceColumn="AGAAGR" DataSetColumn="AGAAGR" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetCodCategoria" Modifier="Public" Name="GetCodCategoria" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetCodCategoria">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select MAX(CODAGR) AS CODAGR from vw_pos_producto_agrupacion where TIPAGR = 'CATE' and REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(UPPER(DESAGR), 'Á', 'A'), 'É', 'E'), 'Í', 'I'), 'Ó', 'O'), 'Ú', 'U'), 'Ñ', 'N') = @DescCategoria</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="DescCategoria" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@DescCategoria" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetCodSubcategoria" Modifier="Public" Name="GetCodSubcategoria" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="GetCodSubcategoria">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select MAX(CODAGR) AS CODAGR from vw_pos_producto_agrupacion where TIPAGR = 'SCAT' and REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(UPPER(DESAGR), 'Á', 'A'), 'É', 'E'), 'Í', 'I'), 'Ó', 'O'), 'Ú', 'U'),'Ñ','N')  = @DescSubcategoria</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="DescSubcategoria" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@DescSubcategoria" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="maestroProducto_paisOrigenTableAdapter" GeneratorDataComponentClassName="maestroProducto_paisOrigenTableAdapter" Name="maestroProducto_paisOrigen" UserDataComponentName="maestroProducto_paisOrigenTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.maestroProducto_paisOrigen" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [maestroProducto_paisOrigen] WHERE (([IdPaisOrigen] = @Original_IdPaisOrigen) AND ((@IsNull_DesPaisOrigen = 1 AND [DesPaisOrigen] IS NULL) OR ([DesPaisOrigen] = @Original_DesPaisOrigen)) AND ((@IsNull_CodSap = 1 AND [CodSap] IS NULL) OR ([CodSap] = @Original_CodSap)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdPaisOrigen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DesPaisOrigen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DesPaisOrigen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CodSap" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodSap" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [maestroProducto_paisOrigen] ([DesPaisOrigen], [CodSap]) VALUES (@DesPaisOrigen, @CodSap);
+SELECT IdPaisOrigen, DesPaisOrigen, CodSap FROM maestroProducto_paisOrigen WHERE (IdPaisOrigen = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DesPaisOrigen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodSap" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        IdPaisOrigen, DesPaisOrigen, CodSap
+FROM            maestroProducto_paisOrigen</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [maestroProducto_paisOrigen] SET [DesPaisOrigen] = @DesPaisOrigen, [CodSap] = @CodSap WHERE (([IdPaisOrigen] = @Original_IdPaisOrigen) AND ((@IsNull_DesPaisOrigen = 1 AND [DesPaisOrigen] IS NULL) OR ([DesPaisOrigen] = @Original_DesPaisOrigen)) AND ((@IsNull_CodSap = 1 AND [CodSap] IS NULL) OR ([CodSap] = @Original_CodSap)));
+SELECT IdPaisOrigen, DesPaisOrigen, CodSap FROM maestroProducto_paisOrigen WHERE (IdPaisOrigen = @IdPaisOrigen)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DesPaisOrigen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodSap" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdPaisOrigen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DesPaisOrigen" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DesPaisOrigen" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DesPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CodSap" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodSap" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodSap" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="IdPaisOrigen" ColumnName="IdPaisOrigen" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdPaisOrigen" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="IdPaisOrigen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdPaisOrigen" DataSetColumn="IdPaisOrigen" />
+              <Mapping SourceColumn="DesPaisOrigen" DataSetColumn="DesPaisOrigen" />
+              <Mapping SourceColumn="CodSap" DataSetColumn="CodSap" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.maestroProducto_paisOrigen" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetDescPaisOrigen" Modifier="Public" Name="GetDescPaisOrigen" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetDescPaisOrigen">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select DesPaisOrigen from maestroProducto_paisOrigen where CodSap=@CodSap</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="CodSap" ColumnName="CodSap" DataSourceName="" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@CodSap" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="CodSap" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_maestroProductoTableAdapter" GeneratorDataComponentClassName="vw_maestroProductoTableAdapter" Name="vw_maestroProducto" UserDataComponentName="vw_maestroProductoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GestionConnectionString (MySettings)" DbObjectName="Gestion.dbo.vw_maestroProducto" DbObjectType="View" FillMethodModifier="Public" FillMethodName="ValidaExistenciaSKU1" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="ValidaExistenciaSKU1" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="ValidaExistenciaSKU1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>select top 1 SKU from [vw_maestroProducto] where SKU=@SKU</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="SKU" ColumnName="SKU" DataSourceName="" DataTypeServer="char(32)" DbType="AnsiString" Direction="Input" ParameterName="@SKU" Precision="0" ProviderType="Char" Scale="0" Size="32" SourceColumn="SKU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SKU" DataSetColumn="SKU" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Gestion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Gestion" msprop:Generator_DataSetName="Gestion" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MaestroProducto_cargador" msprop:Generator_UserTableName="MaestroProducto_cargador" msprop:Generator_RowDeletedName="MaestroProducto_cargadorRowDeleted" msprop:Generator_RowChangedName="MaestroProducto_cargadorRowChanged" msprop:Generator_RowClassName="MaestroProducto_cargadorRow" msprop:Generator_RowChangingName="MaestroProducto_cargadorRowChanging" msprop:Generator_RowEvArgName="MaestroProducto_cargadorRowChangeEvent" msprop:Generator_RowEvHandlerName="MaestroProducto_cargadorRowChangeEventHandler" msprop:Generator_TableClassName="MaestroProducto_cargadorDataTable" msprop:Generator_TableVarName="tableMaestroProducto_cargador" msprop:Generator_RowDeletingName="MaestroProducto_cargadorRowDeleting" msprop:Generator_TablePropName="MaestroProducto_cargador">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="login" msprop:Generator_UserColumnName="login" msprop:Generator_ColumnVarNameInTable="columnlogin" msprop:Generator_ColumnPropNameInRow="login" msprop:Generator_ColumnPropNameInTable="loginColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fila" msprop:Generator_UserColumnName="fila" msprop:Generator_ColumnVarNameInTable="columnfila" msprop:Generator_ColumnPropNameInRow="fila" msprop:Generator_ColumnPropNameInTable="filaColumn" type="xs:long" />
+              <xs:element name="SKU" msprop:Generator_UserColumnName="SKU" msprop:Generator_ColumnVarNameInTable="columnSKU" msprop:Generator_ColumnPropNameInRow="SKU" msprop:Generator_ColumnPropNameInTable="SKUColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descripcionInterna" msprop:Generator_UserColumnName="descripcionInterna" msprop:Generator_ColumnVarNameInTable="columndescripcionInterna" msprop:Generator_ColumnPropNameInRow="descripcionInterna" msprop:Generator_ColumnPropNameInTable="descripcionInternaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descripcionVenta" msprop:Generator_UserColumnName="descripcionVenta" msprop:Generator_ColumnVarNameInTable="columndescripcionVenta" msprop:Generator_ColumnPropNameInRow="descripcionVenta" msprop:Generator_ColumnPropNameInTable="descripcionVentaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipoProducto" msprop:Generator_UserColumnName="tipoProducto" msprop:Generator_ColumnVarNameInTable="columntipoProducto" msprop:Generator_ColumnPropNameInRow="tipoProducto" msprop:Generator_ColumnPropNameInTable="tipoProductoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="estado" msprop:Generator_UserColumnName="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codFamilia" msprop:Generator_UserColumnName="codFamilia" msprop:Generator_ColumnVarNameInTable="columncodFamilia" msprop:Generator_ColumnPropNameInRow="codFamilia" msprop:Generator_ColumnPropNameInTable="codFamiliaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codCategoria" msprop:Generator_UserColumnName="codCategoria" msprop:Generator_ColumnVarNameInTable="columncodCategoria" msprop:Generator_ColumnPropNameInRow="codCategoria" msprop:Generator_ColumnPropNameInTable="codCategoriaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codSubCategoria" msprop:Generator_UserColumnName="codSubCategoria" msprop:Generator_ColumnVarNameInTable="columncodSubCategoria" msprop:Generator_ColumnPropNameInRow="codSubCategoria" msprop:Generator_ColumnPropNameInTable="codSubCategoriaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codRelacionado" msprop:Generator_UserColumnName="codRelacionado" msprop:Generator_ColumnVarNameInTable="columncodRelacionado" msprop:Generator_ColumnPropNameInRow="codRelacionado" msprop:Generator_ColumnPropNameInTable="codRelacionadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidad" msprop:Generator_UserColumnName="unidad" msprop:Generator_ColumnVarNameInTable="columnunidad" msprop:Generator_ColumnPropNameInRow="unidad" msprop:Generator_ColumnPropNameInTable="unidadColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadMedida" msprop:Generator_UserColumnName="unidadMedida" msprop:Generator_ColumnVarNameInTable="columnunidadMedida" msprop:Generator_ColumnPropNameInRow="unidadMedida" msprop:Generator_ColumnPropNameInTable="unidadMedidaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadMedidaConv" msprop:Generator_UserColumnName="unidadMedidaConv" msprop:Generator_ColumnVarNameInTable="columnunidadMedidaConv" msprop:Generator_ColumnPropNameInRow="unidadMedidaConv" msprop:Generator_ColumnPropNameInTable="unidadMedidaConvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadCompra" msprop:Generator_UserColumnName="unidadCompra" msprop:Generator_ColumnVarNameInTable="columnunidadCompra" msprop:Generator_ColumnPropNameInRow="unidadCompra" msprop:Generator_ColumnPropNameInTable="unidadCompraColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadCompraConv" msprop:Generator_UserColumnName="unidadCompraConv" msprop:Generator_ColumnVarNameInTable="columnunidadCompraConv" msprop:Generator_ColumnPropNameInRow="unidadCompraConv" msprop:Generator_ColumnPropNameInTable="unidadCompraConvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadLogistica" msprop:Generator_UserColumnName="unidadLogistica" msprop:Generator_ColumnVarNameInTable="columnunidadLogistica" msprop:Generator_ColumnPropNameInRow="unidadLogistica" msprop:Generator_ColumnPropNameInTable="unidadLogisticaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadLogisticaConv" msprop:Generator_UserColumnName="unidadLogisticaConv" msprop:Generator_ColumnVarNameInTable="columnunidadLogisticaConv" msprop:Generator_ColumnPropNameInRow="unidadLogisticaConv" msprop:Generator_ColumnPropNameInTable="unidadLogisticaConvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadEstadistica" msprop:Generator_UserColumnName="unidadEstadistica" msprop:Generator_ColumnVarNameInTable="columnunidadEstadistica" msprop:Generator_ColumnPropNameInRow="unidadEstadistica" msprop:Generator_ColumnPropNameInTable="unidadEstadisticaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unidadEstadisticaConv" msprop:Generator_UserColumnName="unidadEstadisticaConv" msprop:Generator_ColumnVarNameInTable="columnunidadEstadisticaConv" msprop:Generator_ColumnPropNameInRow="unidadEstadisticaConv" msprop:Generator_ColumnPropNameInTable="unidadEstadisticaConvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarra" msprop:Generator_UserColumnName="codigoBarra" msprop:Generator_ColumnVarNameInTable="columncodigoBarra" msprop:Generator_ColumnPropNameInRow="codigoBarra" msprop:Generator_ColumnPropNameInTable="codigoBarraColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoCompra" msprop:Generator_UserColumnName="codigoCompra" msprop:Generator_ColumnVarNameInTable="columncodigoCompra" msprop:Generator_ColumnPropNameInRow="codigoCompra" msprop:Generator_ColumnPropNameInTable="codigoCompraColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoFabricante" msprop:Generator_UserColumnName="codigoFabricante" msprop:Generator_ColumnVarNameInTable="columncodigoFabricante" msprop:Generator_ColumnPropNameInRow="codigoFabricante" msprop:Generator_ColumnPropNameInTable="codigoFabricanteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoAutoplanet" msprop:Generator_UserColumnName="codigoAutoplanet" msprop:Generator_ColumnVarNameInTable="columncodigoAutoplanet" msprop:Generator_ColumnPropNameInRow="codigoAutoplanet" msprop:Generator_ColumnPropNameInTable="codigoAutoplanetColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descIngles" msprop:Generator_UserColumnName="descIngles" msprop:Generator_ColumnVarNameInTable="columndescIngles" msprop:Generator_ColumnPropNameInRow="descIngles" msprop:Generator_ColumnPropNameInTable="descInglesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipoMaterial" msprop:Generator_UserColumnName="tipoMaterial" msprop:Generator_ColumnVarNameInTable="columntipoMaterial" msprop:Generator_ColumnPropNameInRow="tipoMaterial" msprop:Generator_ColumnPropNameInTable="tipoMaterialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subagrupacion" msprop:Generator_UserColumnName="subagrupacion" msprop:Generator_ColumnVarNameInTable="columnsubagrupacion" msprop:Generator_ColumnPropNameInRow="subagrupacion" msprop:Generator_ColumnPropNameInTable="subagrupacionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paisOrigen" msprop:Generator_UserColumnName="paisOrigen" msprop:Generator_ColumnVarNameInTable="columnpaisOrigen" msprop:Generator_ColumnPropNameInRow="paisOrigen" msprop:Generator_ColumnPropNameInTable="paisOrigenColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipoCodigo" msprop:Generator_UserColumnName="tipoCodigo" msprop:Generator_ColumnVarNameInTable="columntipoCodigo" msprop:Generator_ColumnPropNameInRow="tipoCodigo" msprop:Generator_ColumnPropNameInTable="tipoCodigoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="listaPrecioNormal" msprop:Generator_UserColumnName="listaPrecioNormal" msprop:Generator_ColumnVarNameInTable="columnlistaPrecioNormal" msprop:Generator_ColumnPropNameInRow="listaPrecioNormal" msprop:Generator_ColumnPropNameInTable="listaPrecioNormalColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="listaPrecioPersonal" msprop:Generator_UserColumnName="listaPrecioPersonal" msprop:Generator_ColumnVarNameInTable="columnlistaPrecioPersonal" msprop:Generator_ColumnPropNameInRow="listaPrecioPersonal" msprop:Generator_ColumnPropNameInTable="listaPrecioPersonalColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="listaPrecio06" msprop:Generator_UserColumnName="listaPrecio06" msprop:Generator_ColumnVarNameInTable="columnlistaPrecio06" msprop:Generator_ColumnPropNameInRow="listaPrecio06" msprop:Generator_ColumnPropNameInTable="listaPrecio06Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="precioMerma" msprop:Generator_UserColumnName="precioMerma" msprop:Generator_ColumnVarNameInTable="columnprecioMerma" msprop:Generator_ColumnPropNameInRow="precioMerma" msprop:Generator_ColumnPropNameInTable="precioMermaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="precioDevolucion" msprop:Generator_UserColumnName="precioDevolucion" msprop:Generator_ColumnVarNameInTable="columnprecioDevolucion" msprop:Generator_ColumnPropNameInRow="precioDevolucion" msprop:Generator_ColumnPropNameInTable="precioDevolucionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA" msprop:Generator_UserColumnName="IVA" msprop:Generator_ColumnVarNameInTable="columnIVA" msprop:Generator_ColumnPropNameInRow="IVA" msprop:Generator_ColumnPropNameInTable="IVAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockSeguridad" msprop:Generator_UserColumnName="stockSeguridad" msprop:Generator_ColumnVarNameInTable="columnstockSeguridad" msprop:Generator_ColumnPropNameInRow="stockSeguridad" msprop:Generator_ColumnPropNameInTable="stockSeguridadColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="estacionalidad" msprop:Generator_UserColumnName="estacionalidad" msprop:Generator_ColumnVarNameInTable="columnestacionalidad" msprop:Generator_ColumnPropNameInRow="estacionalidad" msprop:Generator_ColumnPropNameInTable="estacionalidadColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sobreStock" msprop:Generator_UserColumnName="sobreStock" msprop:Generator_ColumnVarNameInTable="columnsobreStock" msprop:Generator_ColumnPropNameInRow="sobreStock" msprop:Generator_ColumnPropNameInTable="sobreStockColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="minPlanograma" msprop:Generator_UserColumnName="minPlanograma" msprop:Generator_ColumnVarNameInTable="columnminPlanograma" msprop:Generator_ColumnPropNameInRow="minPlanograma" msprop:Generator_ColumnPropNameInTable="minPlanogramaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaxPlanograma" msprop:Generator_UserColumnName="MaxPlanograma" msprop:Generator_ColumnVarNameInTable="columnMaxPlanograma" msprop:Generator_ColumnPropNameInRow="MaxPlanograma" msprop:Generator_ColumnPropNameInTable="MaxPlanogramaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tamanoEstuche" msprop:Generator_UserColumnName="tamanoEstuche" msprop:Generator_ColumnVarNameInTable="columntamanoEstuche" msprop:Generator_ColumnPropNameInRow="tamanoEstuche" msprop:Generator_ColumnPropNameInTable="tamanoEstucheColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tamanoPack" msprop:Generator_UserColumnName="tamanoPack" msprop:Generator_ColumnVarNameInTable="columntamanoPack" msprop:Generator_ColumnPropNameInRow="tamanoPack" msprop:Generator_ColumnPropNameInTable="tamanoPackColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="impRetail" msprop:Generator_UserColumnName="impRetail" msprop:Generator_ColumnVarNameInTable="columnimpRetail" msprop:Generator_ColumnPropNameInRow="impRetail" msprop:Generator_ColumnPropNameInTable="impRetailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantPorAuto" msprop:Generator_UserColumnName="cantPorAuto" msprop:Generator_ColumnVarNameInTable="columncantPorAuto" msprop:Generator_ColumnPropNameInRow="cantPorAuto" msprop:Generator_ColumnPropNameInTable="cantPorAutoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="origReabas" msprop:Generator_UserColumnName="origReabas" msprop:Generator_ColumnVarNameInTable="columnorigReabas" msprop:Generator_ColumnPropNameInRow="origReabas" msprop:Generator_ColumnPropNameInTable="origReabasColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="peso" msprop:Generator_UserColumnName="peso" msprop:Generator_ColumnVarNameInTable="columnpeso" msprop:Generator_ColumnPropNameInRow="peso" msprop:Generator_ColumnPropNameInTable="pesoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fabricante" msprop:Generator_UserColumnName="fabricante" msprop:Generator_ColumnVarNameInTable="columnfabricante" msprop:Generator_ColumnPropNameInRow="fabricante" msprop:Generator_ColumnPropNameInTable="fabricanteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="responsable" msprop:Generator_UserColumnName="responsable" msprop:Generator_ColumnVarNameInTable="columnresponsable" msprop:Generator_ColumnPropNameInRow="responsable" msprop:Generator_ColumnPropNameInTable="responsableColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="extension" msprop:Generator_UserColumnName="extension" msprop:Generator_ColumnVarNameInTable="columnextension" msprop:Generator_ColumnPropNameInRow="extension" msprop:Generator_ColumnPropNameInTable="extensionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rutPorDefecto" msprop:Generator_UserColumnName="rutPorDefecto" msprop:Generator_ColumnVarNameInTable="columnrutPorDefecto" msprop:Generator_ColumnPropNameInRow="rutPorDefecto" msprop:Generator_ColumnPropNameInTable="rutPorDefectoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut1" msprop:Generator_UserColumnName="rut1" msprop:Generator_ColumnVarNameInTable="columnrut1" msprop:Generator_ColumnPropNameInRow="rut1" msprop:Generator_ColumnPropNameInTable="rut1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="costo1" msprop:Generator_UserColumnName="costo1" msprop:Generator_ColumnVarNameInTable="columncosto1" msprop:Generator_ColumnPropNameInRow="costo1" msprop:Generator_ColumnPropNameInTable="costo1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodCompra1" msprop:Generator_UserColumnName="CodCompra1" msprop:Generator_ColumnVarNameInTable="columnCodCompra1" msprop:Generator_ColumnPropNameInRow="CodCompra1" msprop:Generator_ColumnPropNameInTable="CodCompra1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOQ1" msprop:Generator_UserColumnName="MOQ1" msprop:Generator_ColumnVarNameInTable="columnMOQ1" msprop:Generator_ColumnPropNameInRow="MOQ1" msprop:Generator_ColumnPropNameInTable="MOQ1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut2" msprop:Generator_UserColumnName="rut2" msprop:Generator_ColumnVarNameInTable="columnrut2" msprop:Generator_ColumnPropNameInRow="rut2" msprop:Generator_ColumnPropNameInTable="rut2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="costo2" msprop:Generator_UserColumnName="costo2" msprop:Generator_ColumnVarNameInTable="columncosto2" msprop:Generator_ColumnPropNameInRow="costo2" msprop:Generator_ColumnPropNameInTable="costo2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codCompra2" msprop:Generator_UserColumnName="codCompra2" msprop:Generator_ColumnVarNameInTable="columncodCompra2" msprop:Generator_ColumnPropNameInRow="codCompra2" msprop:Generator_ColumnPropNameInTable="codCompra2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOQ2" msprop:Generator_UserColumnName="MOQ2" msprop:Generator_ColumnVarNameInTable="columnMOQ2" msprop:Generator_ColumnPropNameInRow="MOQ2" msprop:Generator_ColumnPropNameInTable="MOQ2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut3" msprop:Generator_UserColumnName="rut3" msprop:Generator_ColumnVarNameInTable="columnrut3" msprop:Generator_ColumnPropNameInRow="rut3" msprop:Generator_ColumnPropNameInTable="rut3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="costo3" msprop:Generator_UserColumnName="costo3" msprop:Generator_ColumnVarNameInTable="columncosto3" msprop:Generator_ColumnPropNameInRow="costo3" msprop:Generator_ColumnPropNameInTable="costo3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codCompra3" msprop:Generator_UserColumnName="codCompra3" msprop:Generator_ColumnVarNameInTable="columncodCompra3" msprop:Generator_ColumnPropNameInRow="codCompra3" msprop:Generator_ColumnPropNameInTable="codCompra3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOQ3" msprop:Generator_UserColumnName="MOQ3" msprop:Generator_ColumnVarNameInTable="columnMOQ3" msprop:Generator_ColumnPropNameInRow="MOQ3" msprop:Generator_ColumnPropNameInTable="MOQ3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut4" msprop:Generator_UserColumnName="rut4" msprop:Generator_ColumnVarNameInTable="columnrut4" msprop:Generator_ColumnPropNameInRow="rut4" msprop:Generator_ColumnPropNameInTable="rut4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Costo4" msprop:Generator_UserColumnName="Costo4" msprop:Generator_ColumnVarNameInTable="columnCosto4" msprop:Generator_ColumnPropNameInRow="Costo4" msprop:Generator_ColumnPropNameInTable="Costo4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codCompra4" msprop:Generator_UserColumnName="codCompra4" msprop:Generator_ColumnVarNameInTable="columncodCompra4" msprop:Generator_ColumnPropNameInRow="codCompra4" msprop:Generator_ColumnPropNameInTable="codCompra4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOQ4" msprop:Generator_UserColumnName="MOQ4" msprop:Generator_ColumnVarNameInTable="columnMOQ4" msprop:Generator_ColumnPropNameInRow="MOQ4" msprop:Generator_ColumnPropNameInTable="MOQ4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut5" msprop:Generator_UserColumnName="rut5" msprop:Generator_ColumnVarNameInTable="columnrut5" msprop:Generator_ColumnPropNameInRow="rut5" msprop:Generator_ColumnPropNameInTable="rut5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="costo5" msprop:Generator_UserColumnName="costo5" msprop:Generator_ColumnVarNameInTable="columncosto5" msprop:Generator_ColumnPropNameInRow="costo5" msprop:Generator_ColumnPropNameInTable="costo5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codCompra5" msprop:Generator_UserColumnName="codCompra5" msprop:Generator_ColumnVarNameInTable="columncodCompra5" msprop:Generator_ColumnPropNameInRow="codCompra5" msprop:Generator_ColumnPropNameInTable="codCompra5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOQ5" msprop:Generator_UserColumnName="MOQ5" msprop:Generator_ColumnVarNameInTable="columnMOQ5" msprop:Generator_ColumnPropNameInRow="MOQ5" msprop:Generator_ColumnPropNameInTable="MOQ5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="alarmado" msprop:Generator_UserColumnName="alarmado" msprop:Generator_ColumnVarNameInTable="columnalarmado" msprop:Generator_ColumnPropNameInRow="alarmado" msprop:Generator_ColumnPropNameInTable="alarmadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="etiquetado" msprop:Generator_UserColumnName="etiquetado" msprop:Generator_ColumnVarNameInTable="columnetiquetado" msprop:Generator_ColumnPropNameInRow="etiquetado" msprop:Generator_ColumnPropNameInTable="etiquetadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="traduccion" msprop:Generator_UserColumnName="traduccion" msprop:Generator_ColumnVarNameInTable="columntraduccion" msprop:Generator_ColumnPropNameInRow="traduccion" msprop:Generator_ColumnPropNameInTable="traduccionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="embolsado" msprop:Generator_UserColumnName="embolsado" msprop:Generator_ColumnVarNameInTable="columnembolsado" msprop:Generator_ColumnPropNameInRow="embolsado" msprop:Generator_ColumnPropNameInTable="embolsadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="enzunchado" msprop:Generator_UserColumnName="enzunchado" msprop:Generator_ColumnVarNameInTable="columnenzunchado" msprop:Generator_ColumnPropNameInRow="enzunchado" msprop:Generator_ColumnPropNameInTable="enzunchadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="largo" msprop:Generator_UserColumnName="largo" msprop:Generator_ColumnVarNameInTable="columnlargo" msprop:Generator_ColumnPropNameInRow="largo" msprop:Generator_ColumnPropNameInTable="largoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ancho" msprop:Generator_UserColumnName="ancho" msprop:Generator_ColumnVarNameInTable="columnancho" msprop:Generator_ColumnPropNameInRow="ancho" msprop:Generator_ColumnPropNameInTable="anchoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="alto" msprop:Generator_UserColumnName="alto" msprop:Generator_ColumnVarNameInTable="columnalto" msprop:Generator_ColumnPropNameInRow="alto" msprop:Generator_ColumnPropNameInTable="altoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt1" msprop:Generator_UserColumnName="codigoBarraAlt1" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt1" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt1" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt2" msprop:Generator_UserColumnName="codigoBarraAlt2" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt2" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt2" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt3" msprop:Generator_UserColumnName="codigoBarraAlt3" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt3" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt3" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt4" msprop:Generator_UserColumnName="codigoBarraAlt4" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt4" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt4" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt5" msprop:Generator_UserColumnName="codigoBarraAlt5" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt5" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt5" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigoBarraAlt6" msprop:Generator_UserColumnName="codigoBarraAlt6" msprop:Generator_ColumnVarNameInTable="columncodigoBarraAlt6" msprop:Generator_ColumnPropNameInRow="codigoBarraAlt6" msprop:Generator_ColumnPropNameInTable="codigoBarraAlt6Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin1" msprop:Generator_UserColumnName="stockMin1" msprop:Generator_ColumnVarNameInTable="columnstockMin1" msprop:Generator_ColumnPropNameInRow="stockMin1" msprop:Generator_ColumnPropNameInTable="stockMin1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax1" msprop:Generator_UserColumnName="stockMax1" msprop:Generator_ColumnVarNameInTable="columnstockMax1" msprop:Generator_ColumnPropNameInRow="stockMax1" msprop:Generator_ColumnPropNameInTable="stockMax1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin2" msprop:Generator_UserColumnName="stockMin2" msprop:Generator_ColumnVarNameInTable="columnstockMin2" msprop:Generator_ColumnPropNameInRow="stockMin2" msprop:Generator_ColumnPropNameInTable="stockMin2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax2" msprop:Generator_UserColumnName="stockMax2" msprop:Generator_ColumnVarNameInTable="columnstockMax2" msprop:Generator_ColumnPropNameInRow="stockMax2" msprop:Generator_ColumnPropNameInTable="stockMax2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin3" msprop:Generator_UserColumnName="stockMin3" msprop:Generator_ColumnVarNameInTable="columnstockMin3" msprop:Generator_ColumnPropNameInRow="stockMin3" msprop:Generator_ColumnPropNameInTable="stockMin3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax3" msprop:Generator_UserColumnName="stockMax3" msprop:Generator_ColumnVarNameInTable="columnstockMax3" msprop:Generator_ColumnPropNameInRow="stockMax3" msprop:Generator_ColumnPropNameInTable="stockMax3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin4" msprop:Generator_UserColumnName="stockMin4" msprop:Generator_ColumnVarNameInTable="columnstockMin4" msprop:Generator_ColumnPropNameInRow="stockMin4" msprop:Generator_ColumnPropNameInTable="stockMin4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax4" msprop:Generator_UserColumnName="stockMax4" msprop:Generator_ColumnVarNameInTable="columnstockMax4" msprop:Generator_ColumnPropNameInRow="stockMax4" msprop:Generator_ColumnPropNameInTable="stockMax4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin5" msprop:Generator_UserColumnName="stockMin5" msprop:Generator_ColumnVarNameInTable="columnstockMin5" msprop:Generator_ColumnPropNameInRow="stockMin5" msprop:Generator_ColumnPropNameInTable="stockMin5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax5" msprop:Generator_UserColumnName="stockMax5" msprop:Generator_ColumnVarNameInTable="columnstockMax5" msprop:Generator_ColumnPropNameInRow="stockMax5" msprop:Generator_ColumnPropNameInTable="stockMax5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin6" msprop:Generator_UserColumnName="stockMin6" msprop:Generator_ColumnVarNameInTable="columnstockMin6" msprop:Generator_ColumnPropNameInRow="stockMin6" msprop:Generator_ColumnPropNameInTable="stockMin6Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax6" msprop:Generator_UserColumnName="stockMax6" msprop:Generator_ColumnVarNameInTable="columnstockMax6" msprop:Generator_ColumnPropNameInRow="stockMax6" msprop:Generator_ColumnPropNameInTable="stockMax6Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin7" msprop:Generator_UserColumnName="stockMin7" msprop:Generator_ColumnVarNameInTable="columnstockMin7" msprop:Generator_ColumnPropNameInRow="stockMin7" msprop:Generator_ColumnPropNameInTable="stockMin7Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax7" msprop:Generator_UserColumnName="stockMax7" msprop:Generator_ColumnVarNameInTable="columnstockMax7" msprop:Generator_ColumnPropNameInRow="stockMax7" msprop:Generator_ColumnPropNameInTable="stockMax7Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin8" msprop:Generator_UserColumnName="stockMin8" msprop:Generator_ColumnVarNameInTable="columnstockMin8" msprop:Generator_ColumnPropNameInRow="stockMin8" msprop:Generator_ColumnPropNameInTable="stockMin8Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax8" msprop:Generator_UserColumnName="stockMax8" msprop:Generator_ColumnVarNameInTable="columnstockMax8" msprop:Generator_ColumnPropNameInRow="stockMax8" msprop:Generator_ColumnPropNameInTable="stockMax8Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin9" msprop:Generator_UserColumnName="stockMin9" msprop:Generator_ColumnVarNameInTable="columnstockMin9" msprop:Generator_ColumnPropNameInRow="stockMin9" msprop:Generator_ColumnPropNameInTable="stockMin9Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax9" msprop:Generator_UserColumnName="stockMax9" msprop:Generator_ColumnVarNameInTable="columnstockMax9" msprop:Generator_ColumnPropNameInRow="stockMax9" msprop:Generator_ColumnPropNameInTable="stockMax9Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin10" msprop:Generator_UserColumnName="stockMin10" msprop:Generator_ColumnVarNameInTable="columnstockMin10" msprop:Generator_ColumnPropNameInRow="stockMin10" msprop:Generator_ColumnPropNameInTable="stockMin10Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax10" msprop:Generator_UserColumnName="stockMax10" msprop:Generator_ColumnVarNameInTable="columnstockMax10" msprop:Generator_ColumnPropNameInRow="stockMax10" msprop:Generator_ColumnPropNameInTable="stockMax10Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin11" msprop:Generator_UserColumnName="stockMin11" msprop:Generator_ColumnVarNameInTable="columnstockMin11" msprop:Generator_ColumnPropNameInRow="stockMin11" msprop:Generator_ColumnPropNameInTable="stockMin11Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMax11" msprop:Generator_UserColumnName="stockMax11" msprop:Generator_ColumnVarNameInTable="columnstockMax11" msprop:Generator_ColumnPropNameInRow="stockMax11" msprop:Generator_ColumnPropNameInTable="stockMax11Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stockMin12" msprop:Generator_UserColumnName="stockMin12" msprop:Generator_ColumnVarNameInTable="columnstockMin12" msprop:Generator_ColumnPropNameInRow="stockMin12" msprop:Generator_ColumnPropNameInTable="stockMin12Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StockMax12" msprop:Generator_UserColumnName="StockMax12" msprop:Generator_ColumnVarNameInTable="columnStockMax12" msprop:Generator_ColumnPropNameInRow="StockMax12" msprop:Generator_ColumnPropNameInTable="StockMax12Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_InsertaMP_cargadorDinamico" msprop:Generator_UserTableName="sp_InsertaMP_cargadorDinamico" msprop:Generator_RowDeletedName="sp_InsertaMP_cargadorDinamicoRowDeleted" msprop:Generator_RowChangedName="sp_InsertaMP_cargadorDinamicoRowChanged" msprop:Generator_RowClassName="sp_InsertaMP_cargadorDinamicoRow" msprop:Generator_RowChangingName="sp_InsertaMP_cargadorDinamicoRowChanging" msprop:Generator_RowEvArgName="sp_InsertaMP_cargadorDinamicoRowChangeEvent" msprop:Generator_RowEvHandlerName="sp_InsertaMP_cargadorDinamicoRowChangeEventHandler" msprop:Generator_TableClassName="sp_InsertaMP_cargadorDinamicoDataTable" msprop:Generator_TableVarName="tablesp_InsertaMP_cargadorDinamico" msprop:Generator_RowDeletingName="sp_InsertaMP_cargadorDinamicoRowDeleting" msprop:Generator_TablePropName="sp_InsertaMP_cargadorDinamico">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_actualiza_MaestroProducto_STEP" msprop:Generator_UserTableName="sp_actualiza_MaestroProducto_STEP" msprop:Generator_RowDeletedName="sp_actualiza_MaestroProducto_STEPRowDeleted" msprop:Generator_RowChangedName="sp_actualiza_MaestroProducto_STEPRowChanged" msprop:Generator_RowClassName="sp_actualiza_MaestroProducto_STEPRow" msprop:Generator_RowChangingName="sp_actualiza_MaestroProducto_STEPRowChanging" msprop:Generator_RowEvArgName="sp_actualiza_MaestroProducto_STEPRowChangeEvent" msprop:Generator_RowEvHandlerName="sp_actualiza_MaestroProducto_STEPRowChangeEventHandler" msprop:Generator_TableClassName="sp_actualiza_MaestroProducto_STEPDataTable" msprop:Generator_TableVarName="tablesp_actualiza_MaestroProducto_STEP" msprop:Generator_RowDeletingName="sp_actualiza_MaestroProducto_STEPRowDeleting" msprop:Generator_TablePropName="sp_actualiza_MaestroProducto_STEP">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_carga_MaestroProducto_STEP" msprop:Generator_UserTableName="sp_carga_MaestroProducto_STEP" msprop:Generator_RowDeletedName="sp_carga_MaestroProducto_STEPRowDeleted" msprop:Generator_RowChangedName="sp_carga_MaestroProducto_STEPRowChanged" msprop:Generator_RowClassName="sp_carga_MaestroProducto_STEPRow" msprop:Generator_RowChangingName="sp_carga_MaestroProducto_STEPRowChanging" msprop:Generator_RowEvArgName="sp_carga_MaestroProducto_STEPRowChangeEvent" msprop:Generator_RowEvHandlerName="sp_carga_MaestroProducto_STEPRowChangeEventHandler" msprop:Generator_TableClassName="sp_carga_MaestroProducto_STEPDataTable" msprop:Generator_TableVarName="tablesp_carga_MaestroProducto_STEP" msprop:Generator_RowDeletingName="sp_carga_MaestroProducto_STEPRowDeleting" msprop:Generator_TablePropName="sp_carga_MaestroProducto_STEP">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_pos_producto_agrupacion" msprop:Generator_UserTableName="vw_pos_producto_agrupacion" msprop:Generator_RowDeletedName="vw_pos_producto_agrupacionRowDeleted" msprop:Generator_RowChangedName="vw_pos_producto_agrupacionRowChanged" msprop:Generator_RowClassName="vw_pos_producto_agrupacionRow" msprop:Generator_RowChangingName="vw_pos_producto_agrupacionRowChanging" msprop:Generator_RowEvArgName="vw_pos_producto_agrupacionRowChangeEvent" msprop:Generator_RowEvHandlerName="vw_pos_producto_agrupacionRowChangeEventHandler" msprop:Generator_TableClassName="vw_pos_producto_agrupacionDataTable" msprop:Generator_TableVarName="tablevw_pos_producto_agrupacion" msprop:Generator_RowDeletingName="vw_pos_producto_agrupacionRowDeleting" msprop:Generator_TablePropName="vw_pos_producto_agrupacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIPAGR" msprop:Generator_UserColumnName="TIPAGR" msprop:Generator_ColumnVarNameInTable="columnTIPAGR" msprop:Generator_ColumnPropNameInRow="TIPAGR" msprop:Generator_ColumnPropNameInTable="TIPAGRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODAGR" msprop:Generator_UserColumnName="CODAGR" msprop:Generator_ColumnVarNameInTable="columnCODAGR" msprop:Generator_ColumnPropNameInRow="CODAGR" msprop:Generator_ColumnPropNameInTable="CODAGRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESAGR" msprop:Generator_UserColumnName="DESAGR" msprop:Generator_ColumnVarNameInTable="columnDESAGR" msprop:Generator_ColumnPropNameInRow="DESAGR" msprop:Generator_ColumnPropNameInTable="DESAGRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AGAAGR" msprop:Generator_UserColumnName="AGAAGR" msprop:Generator_ColumnVarNameInTable="columnAGAAGR" msprop:Generator_ColumnPropNameInRow="AGAAGR" msprop:Generator_ColumnPropNameInTable="AGAAGRColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="maestroProducto_paisOrigen" msprop:Generator_UserTableName="maestroProducto_paisOrigen" msprop:Generator_RowDeletedName="maestroProducto_paisOrigenRowDeleted" msprop:Generator_RowChangedName="maestroProducto_paisOrigenRowChanged" msprop:Generator_RowClassName="maestroProducto_paisOrigenRow" msprop:Generator_RowChangingName="maestroProducto_paisOrigenRowChanging" msprop:Generator_RowEvArgName="maestroProducto_paisOrigenRowChangeEvent" msprop:Generator_RowEvHandlerName="maestroProducto_paisOrigenRowChangeEventHandler" msprop:Generator_TableClassName="maestroProducto_paisOrigenDataTable" msprop:Generator_TableVarName="tablemaestroProducto_paisOrigen" msprop:Generator_RowDeletingName="maestroProducto_paisOrigenRowDeleting" msprop:Generator_TablePropName="maestroProducto_paisOrigen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdPaisOrigen" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdPaisOrigen" msprop:Generator_ColumnVarNameInTable="columnIdPaisOrigen" msprop:Generator_ColumnPropNameInRow="IdPaisOrigen" msprop:Generator_ColumnPropNameInTable="IdPaisOrigenColumn" type="xs:int" />
+              <xs:element name="DesPaisOrigen" msprop:Generator_UserColumnName="DesPaisOrigen" msprop:Generator_ColumnVarNameInTable="columnDesPaisOrigen" msprop:Generator_ColumnPropNameInRow="DesPaisOrigen" msprop:Generator_ColumnPropNameInTable="DesPaisOrigenColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodSap" msprop:Generator_UserColumnName="CodSap" msprop:Generator_ColumnVarNameInTable="columnCodSap" msprop:Generator_ColumnPropNameInRow="CodSap" msprop:Generator_ColumnPropNameInTable="CodSapColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vw_maestroProducto" msprop:Generator_UserTableName="vw_maestroProducto" msprop:Generator_RowDeletedName="vw_maestroProductoRowDeleted" msprop:Generator_RowChangedName="vw_maestroProductoRowChanged" msprop:Generator_RowClassName="vw_maestroProductoRow" msprop:Generator_RowChangingName="vw_maestroProductoRowChanging" msprop:Generator_RowEvArgName="vw_maestroProductoRowChangeEvent" msprop:Generator_RowEvHandlerName="vw_maestroProductoRowChangeEventHandler" msprop:Generator_TableClassName="vw_maestroProductoDataTable" msprop:Generator_TableVarName="tablevw_maestroProducto" msprop:Generator_RowDeletingName="vw_maestroProductoRowDeleting" msprop:Generator_TablePropName="vw_maestroProducto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SKU" msprop:Generator_UserColumnName="SKU" msprop:Generator_ColumnVarNameInTable="columnSKU" msprop:Generator_ColumnPropNameInRow="SKU" msprop:Generator_ColumnPropNameInTable="SKUColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_pos_producto_agrupacion" />
+      <xs:field xpath="mstns:TIPAGR" />
+      <xs:field xpath="mstns:CODAGR" />
+    </xs:unique>
+    <xs:unique name="maestroProducto_paisOrigen_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:maestroProducto_paisOrigen" />
+      <xs:field xpath="mstns:IdPaisOrigen" />
+    </xs:unique>
+    <xs:unique name="vw_maestroProducto_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_maestroProducto" />
+      <xs:field xpath="mstns:SKU" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

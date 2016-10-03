@@ -1,0 +1,9 @@
+
+
+----
+DESINSTALA
+c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\InstallUtil /U   "C:\Documents and Settings\ignacio\Escritorio\APViawareService\APViawareService\bin\Release\APViawareService.exe"
+
+
+INSTALA
+c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\InstallUtil "C:\Documents and Settings\Ignacio\Escritorio\APViawareService\APViawareService\bin\Release\APViawareService.exe"
