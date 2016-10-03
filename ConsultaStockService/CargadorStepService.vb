@@ -767,7 +767,7 @@ Public Class CargadorStepService
 
                             Dim NombreRepuesto As String = ""
                             Dim UbicacionIMG As String = ""
-
+                            Dim NombreIMG As String = ""
                             TipoAssetAtributo = ""
 
                             If (ListaNodosXML Is Nothing) = False Then
@@ -776,7 +776,7 @@ Public Class CargadorStepService
                                     TipoAssetAtributo = AssetNodo.Attributes.GetNamedItem("UserTypeID").Value
 
                                     If (TipoAssetAtributo = "ProductImage") Then
-                                        Dim NombreIMG As String
+
 
                                         Try
 
